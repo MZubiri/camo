@@ -1,0 +1,144 @@
+:root {
+    --color-primario: #1d1e40;
+    --color-secundario: #a1dff2;
+    --color-fondo-claro: #f8f9fa;
+    --color-texto-claro: #222;
+    /* Eliminado variables para modo oscuro */
+}
+
+body {
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto-claro);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Navbar y footer */
+.navbar,
+footer {
+    background-color: var(--color-primario) !important;
+}
+
+/* Botones primarios */
+.btn-primary {
+    background-color: var(--color-secundario);
+    border: none;
+    color: var(--color-primario);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #82c8e9;
+    color: var(--color-primario);
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 6px 15px rgba(26, 30, 64, 0.15);
+    transition: transform 0.3s ease;
+    color: var(--color-primario);
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: var(--color-secundario);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+#hero h1 {
+    font-weight: 900;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones */
+h2,
+p.lead {
+    color: var(--color-primario);
+    transition: color 0.4s;
+}
+
+/* Título general sección Cursos */
+#cursos h2 {
+    color: var(--color-primario);
+    transition: color 0.4s;
+}
+
+/* Títulos dentro de las tarjetas */
+.card .card-title {
+    color: var(--color-primario);
+    transition: color 0.4s;
+    font-weight: 700;
+}
+
+/* Textos dentro de las tarjetas */
+.card .card-text {
+    color: #333333;
+    transition: color 0.4s;
+}
+
+/* Formulario */
+form label,
+form input,
+form textarea {
+    transition: color 0.4s, background-color 0.4s;
+}
+
+/* Footer texto */
+footer small {
+    color: #cfd7f7;
+    transition: color 0.4s;
+}
+
+/* Estilos botón WhatsApp flotante */
+#btnWhatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    z-index: 1050;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  #btnWhatsapp:hover {
+    background-color: #1ebe57;
+  }
+  
+  #btnWhatsapp svg {
+    flex-shrink: 0;
+  }
+  
